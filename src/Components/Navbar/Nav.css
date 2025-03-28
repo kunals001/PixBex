@@ -1,0 +1,53 @@
+.under-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+  
+  /* Show only on hover of that specific menu-item */
+.btnClass:hover .under-1 {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+/* Button Styling */
+.btnClass {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Default Text Style */
+  .btnClass h5 {
+    margin: 0;
+    position: relative;
+    color: #fff; /* Default white text */
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover Effect - Gradient with Clear Text */
+  .btnClass:hover h5 {
+    background: linear-gradient(270deg, #FF00FF, #00FFFF, #FFA500, #FF1493);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s ease infinite;
+  }
+  
+  /* Gradient Animation */
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  

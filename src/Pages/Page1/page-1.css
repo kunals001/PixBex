@@ -1,0 +1,33 @@
+.rotate {
+    box-shadow: 0 0 8px rgba(77, 77, 255, 0.5);
+    transition: box-shadow 0.5s ease-in-out, filter 5s linear;
+  }
+  
+  .rotate:hover {
+    box-shadow: 0 0 10px 2px rgba(77, 77, 255, 0.6), 0 0 13px 3px rgba(255, 77, 255, 0.5),
+      0 0 15px 1px rgba(153, 51, 255, 0.5); /* Light and smooth shadow on hover */
+    filter: hue-rotate(360deg); /* Rotate colors smoothly */
+  }
+  
+  @keyframes shadowRotate {
+    0% {
+      box-shadow: 0 0 15px 5px rgba(77, 77, 255, 0.6), 15px 0 20px rgba(255, 77, 255, 0.6),
+        0 15px 20px rgba(153, 51, 255, 0.6), -15px 0 20px rgba(255, 77, 255, 0.6);
+    }
+    25% {
+      box-shadow: 0 0 15px 5px rgba(255, 77, 255, 0.6), 15px 0 20px rgba(153, 51, 255, 0.6),
+        0 15px 20px rgba(77, 77, 255, 0.6), -15px 0 20px rgba(255, 77, 255, 0.6);
+    }
+    50% {
+      box-shadow: 0 0 15px 5px rgba(153, 51, 255, 0.6), 15px 0 20px rgba(255, 77, 255, 0.6),
+        0 15px 20px rgba(255, 77, 255, 0.6), -15px 0 20px rgba(77, 77, 255, 0.6);
+    }
+    75% {
+      box-shadow: 0 0 15px 5px rgba(255, 77, 255, 0.6), 15px 0 20px rgba(77, 77, 255, 0.6),
+        0 15px 20px rgba(153, 51, 255, 0.6), -15px 0 20px rgba(255, 77, 255, 0.6);
+    }
+    100% {
+      box-shadow: 0 0 15px 5px rgba(77, 77, 255, 0.6), 15px 0 20px rgba(255, 77, 255, 0.6),
+        0 15px 20px rgba(153, 51, 255, 0.6), -15px 0 20px rgba(255, 77, 255, 0.6);
+    }
+  }

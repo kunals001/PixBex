@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: Barlow-bold;
+    src: url(./assets/Barlow-Bold.ttf);
+}
+
+@font-face {
+    font-family: Barlow-semibold;
+    src: url(./assets/Barlow-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Barlow-itallic;
+    src: url(./assets/Barlow-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family:Barlow-light;
+    src: url(./assets/Barlow-Light.ttf);
+}
+
+@font-face {
+    font-family: Anton;
+    src: url(./assets/Anton-Regular.ttf);
+}
+
+@font-face {
+    font-family: Anton2;
+    src: url(./assets/file.woff2);
+}
+
+.imagediv{
+    width:10vw;
+    height:10vw;
+    background-color: aqua;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+}
+
