@@ -30,6 +30,16 @@
     src: url(./assets/file.woff2);
 }
 
+@font-face {
+    font-family: fredoka;
+    src: url(./assets/Fredoka-Bold.ttf);
+}
+
+@font-face {
+    font-family: lovelo;
+    src: url(./assets/lovelo_black.otf);
+}
+
 .imagediv{
     width:10vw;
     height:10vw;
